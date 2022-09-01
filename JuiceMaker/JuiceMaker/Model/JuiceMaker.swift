@@ -67,6 +67,12 @@ struct JuiceMaker {
     }
     
     func makeJuice(_ juice: Juice) {
+<<<<<<< HEAD
             fruitStore.decrease(juice.recipe)
+=======
+        if canMake(juice) {
+            fruitStore.decrease(juice.recipe)
+        }
+>>>>>>> main
     }
 }

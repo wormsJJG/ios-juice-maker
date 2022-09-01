@@ -13,6 +13,7 @@ class FruitStore {
     }
     
     var fruits = [Fruit: Int]()
+<<<<<<< HEAD
     
     init() {
         for fruit in Fruit.allCases {
@@ -25,6 +26,20 @@ class FruitStore {
         fruits += amount
     }
     
+=======
+    
+    init() {
+        for fruit in Fruit.allCases {
+            fruits[fruit] = 10
+        }
+    }
+    
+    func increase(_ fruit: Fruit, _ amount: Int) {
+        guard var fruits = fruits[fruit] else { return }
+        fruits += amount
+    }
+    
+>>>>>>> main
     func decrease(_ fruits: [Fruit: Int]) {
         for fruit in fruits {
             guard var fruits = self.fruits[fruit.key] else { return }
@@ -33,3 +48,8 @@ class FruitStore {
         }
     }
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> main
